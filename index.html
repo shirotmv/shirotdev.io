@@ -1,20 +1,310 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Portafolio - Shirot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shirot</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://images.seeklogo.com/logo-png/50/2/github-icon-logo-png_seeklogo-503247.png">
 </head>
 <body>
-  <h1>Portafolio de Shirot</h1>
-  <p>Bienvenido a mi portafolio.</p>
+    <header class="header">
+        <nav class="nav">
+<a href="https://github.com/shirotmv" class="logo"><img src="https://images.seeklogo.com/logo-png/50/2/github-icon-logo-png_seeklogo-503247.png" alt="Devorless Logo" style="height: 40px;"></a>
+            
+            <ul class="nav-center">
+                <li><a href="#about" class="nav-link active" data-i18n="nav.about">Inicio</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experiencia</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Proyectos</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Habilidades</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+            </ul>
 
-  <h2>Sobre mí</h2>
-  <p>Mi nombre es Shirot. Soy un creador apasionado.</p>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button class="language-btn" id="languageBtn">
+                        <span id="currentLang">🇪🇸</span>
+                        <span>▼</span>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <div class="language-option active" data-lang="es">
+                            <span>🇪🇸</span>
+                            <span>Español</span>
+                        </div>
+                        <div class="language-option" data-lang="en">
+                            <span>🇺🇸</span>
+                            <span>English</span>
+                        </div>
+                        <div class="language-option" data-lang="pt">
+                            <span>🇧🇷</span>
+                            <span>Português</span>
+                        </div>
+                    </div>
+                </div>
 
-  <h2>Portfolio - Shirot</h2>
-  <p>Welcome to my portfolio.</p>
 
-  <h2>About Me</h2>
-  <p>My name is Shirot. I am a passionate creator.</p>
+                <button class="mobile-toggle" id="mobileToggle">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 data-i18n="hero.name">Shirot</h1>
+                        <p class="role" data-i18n="hero.role">Systems Engineer</p>
+                        <p class="description" data-i18n="hero.description">
+                            Desarrollador apasionado enfocado en aprender y mejorar en cualquier situación. 
+                            Siempre buscando nuevos desafíos y oportunidades de crecimiento profesional.
+                        </p>
+                        
+<div class="hero-stats">
+                            <div class="stat">
+                                <div class="stat-number">3</div>
+                                <div class="stat-label" data-i18n="hero.languages">Idiomas</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label" data-i18n="hero.technologies">Tecnologías</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">PE</div>
+                                <div class="stat-label" data-i18n="hero.location">Ubicación</div>
+                            </div>
+                        </div>
+                        <div class="hero-actions">
+<a href="./cv-shirot.pdf" class="cv-btn" download="CV-Shirot.pdf">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cv-icon"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"></path></svg>
+                                <span>Descargar CV</span>
+                            </a>
+                            <div class="hero-socials">
+                                <a href="https://www.linkedin.com/in/tu-perfil-linkedin" class="social-icon" id="linkedin-icon" title="LinkedIn" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" alt="LinkedIn"></a>
+                                <a href="https://dev.com" class="social-icon devorless-icon" title="Devorless" target="_blank">D</a>
+                            </div>
+                        </div>
+                        <div class="languages-list">
+                            <span class="language-tag">🇺🇸 English</span>
+                            <span class="language-tag">🇪🇸 Español</span>
+                            <span class="language-tag">🇧🇷 Português</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://avatars.githubusercontent.com/u/218874298?v=4' width='280' height='280' viewBox='0 0 280 280'%3E%3Crect width='280' height='280' fill='%23161b22' rx='90'/%3E%3Ccircle cx='90' cy='90' r='70' fill='%2358a6ff' opacity='0.1'/%3E%3Ctext x='90' y='100' text-anchor='middle' fill='%2358a6ff' font-size='60' font-family='monospace'%3E👨‍💻%3C/text%3E%3C/svg%3E" alt="Shirot" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="experience" id="experience">
+    <div class="container">
+        <h2 class="section-title fade-in">Experiencia Laboral</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="experience-item fade-in">
+                    <h4>Desarrollador Full-Stack</h4>
+                    <p class="company">Empresa Tecnológica Global | 2022 - Presente</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="experience-item fade-in">
+                    <h4>Ingeniero de Software Interno</h4>
+                    <p class="company">Startup Innovadora | 2021 - 2022</p>
+                    <ul>
+                        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</li>
+                        <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</li>
+                        <li>Deserunt mollit anim id est laborum.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="projects.title">Proyectos Destacados</h2>
+                <div class="projects-grid">
+<div class="project-card fade-in" onclick="openModal('project1')">
+                        <img src="https://blog.kawak.net/hs-fs/hubfs/muestra-software-kawak.jpg?width=710&name=muestra-software-kawak.jpg" alt="Previsualización de Sistema de Gestión" class="project-image">
+                        <div class="project-header">
+                            <h3 class="project-title" data-i18n="projects.project1.title">Sistema de Gestión</h3>
+                            <p class="project-description" data-i18n="projects.project1.description">
+                                Aplicación web completa para gestión empresarial con dashboard interactivo, 
+                                autenticación de usuarios y reportes en tiempo real.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+<div class="project-card fade-in" onclick="openModal('project2')">
+                        <img src="https://files.liveconnect.chat/421/lc/2/usuarios/1310/files/noticias/activar_chat_gpt_en_chatbots.png" alt="Previsualización de Bot de Automatización" class="project-image">
+                        <div class="project-header">
+                            <h3 class="project-title" data-i18n="projects.project2.title">Bot de Automatización</h3>
+                            <p class="project-description" data-i18n="projects.project2.description">
+                                Bot inteligente para automatizar tareas repetitivas con múltiples integraciones de API 
+                                y sistema de notificaciones.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">APIs</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+<div class="project-card fade-in" onclick="openModal('project3')">
+                        <img src="https://www.trecebits.com/wp-content/uploads/2023/02/crear-backup-cuenta-Telegram.webp" alt="Previsualización de Aplicación Móvil" class="project-image">
+                        <div class="project-header">
+                            <h3 class="project-title" data-i18n="projects.project3.title">Aplicación Móvil</h3>
+                            <p class="project-description" data-i18n="projects.project3.description">
+                                Aplicación móvil multiplataforma con funcionalidad offline, 
+                                sincronización en la nube e interfaz intuitiva.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="skills.title">Habilidades Técnicas</h2>
+                <div class="skills-container">
+<div class="skills-grid">
+                        <div class="skill-item fade-in" data-skill-color="#f7df1e">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript"></div>
+                            <div class="skill-name">JavaScript</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#3776ab">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=python" alt="Python"></div>
+                            <div class="skill-name">Python</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#f89820">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=java" alt="Java"></div>
+                            <div class="skill-name">Java</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#00599c">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=cpp" alt="C++"></div>
+                            <div class="skill-name">C++</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#a8b9cc">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=c" alt="C"></div>
+                            <div class="skill-name">C</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#777bb4">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=php" alt="PHP"></div>
+                            <div class="skill-name">PHP</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#e34f26">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=html" alt="HTML"></div>
+                            <div class="skill-name">HTML</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#1572b6">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=css" alt="CSS"></div>
+                            <div class="skill-name">CSS</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#61dafb">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=react" alt="React"></div>
+                            <div class="skill-name">React</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#339933">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js"></div>
+                            <div class="skill-name">Node.js</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#4479a1">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL"></div>
+                            <div class="skill-name">MySQL</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#2496ed">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=docker" alt="Docker"></div>
+                            <div class="skill-name">Docker</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#f05032">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=git" alt="Git"></div>
+                            <div class="skill-name">Git</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#fcc624">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=linux" alt="Linux"></div>
+                            <div class="skill-name">Linux</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#512bd4">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=cs" alt="C#"></div>
+                            <div class="skill-name">C#</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#dd0031">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=angular" alt="Angular"></div>
+                            <div class="skill-name">Angular</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#cc2927">
+                            <div class="skill-icon"><img src="https://brandlogos.net/wp-content/uploads/2025/03/microsoft_sql_server-logo_brandlogos.net_wykhq.png" alt="SQL Server"></div>
+                            <div class="skill-name">SQL Server</div>
+                        </div>
+                        <div class="skill-item fade-in" data-skill-color="#3178c6">
+                            <div class="skill-icon"><img src="https://skillicons.dev/icons?i=ts" alt="TypeScript"></div>
+                            <div class="skill-name">TypeScript</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="contact.title">Ponte en Contacto</h2>
+                <p class="fade-in" data-i18n="contact.subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+                <div class="contact-info fade-in">
+                    <a href="mailto:lofidiart@gmail.com" class="contact-item">
+                        <span>📧</span>
+                        <span>lofidiart@gmail.com</span>
+                    </a>
+                    <a href="https://shirotmv.github.io/shirotdev.io/" class="contact-item">
+                        <span>🌐</span>
+                        <span data-i18n="contact.portfolio">Portfolio</span>
+                    </a>
+                    <a href="#" class="contact-item">
+                        <span>📍</span>
+                        <span>Peru</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer.text">&copy; 2025 Shirot - Coding my way to freedom</p>
+        </div>
+    </footer>
+
+    <!-- Modal Structure -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
